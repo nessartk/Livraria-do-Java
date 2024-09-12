@@ -1,4 +1,4 @@
-public class Livro {
+public abstract class Livro {
     private String nome;
     private String descricao;
     private double valor;
@@ -74,19 +74,19 @@ public class Livro {
 
     // metodo para desconto em%
 
-    public boolean aplicaDescontoDe(double porcentagem){
-        if (porcentagem > 0.3){
-            System.out.println("O Desconto não pode ser maior que 30%"); // msg printa em console, se quiser hide, comentar apenas
-            return false;
-
-        }else {
-            this.valor -= this.valor * porcentagem;
-            return true;
-
-        }
+    public abstract boolean aplicaDescontoDe(double porcentagem);
+//        if (porcentagem > 0.3){
+//            System.out.println("O Desconto não pode ser maior que 30%"); // msg printa em console, se quiser hide, comentar apenas
+//            return false;
+//
+//        }else {
+//            this.valor -= this.valor * porcentagem;
+//            return true;
 
 
-    }
+
+
+
 
 
     // metodo para  saber se o livro tem autor

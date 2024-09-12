@@ -9,13 +9,12 @@ public class Main {
         autor1.setEmail("rodrigo.turini@Gmail.com");
         autor1.setCpf("123.456.789.10");
 
-        // invoca o construtor da classe Livro para criar o objeto livro1
-        Livro livro1 = new Livro(autor1);
+
+        Livro livro1 = new LivroFisico(autor1);
         livro1.setNome("Java");
         livro1.setDescricao("Novos recursos da Linguagem");
         livro1.setValor(59.90);
         livro1.setIsbn("978-85-66250-46-6");
-
 
         // associa o autor ao seu livro
         livro1.setAutor(autor1);
@@ -33,7 +32,7 @@ public class Main {
         autor2.setCpf("010.987.654.32");
 
         // objeto livro2
-        Livro livro2= new Livro(autor2);
+        Livro livro2= new Ebook(autor2);
         livro2.setNome("Lógica de Programação");
         livro2.setDescricao("Crie seus primeiros programas");
         livro2.setValor(59.90);
@@ -57,7 +56,7 @@ public class Main {
 
 
         // objeto livro3
-        Livro livro3 = new Livro(autor3);
+        Livro livro3 = new LivroFisico(autor3);
         livro3.setNome("POO Java");
         livro3.setDescricao("Do Básico ao Avançado");
         livro3.setValor(59.90);
