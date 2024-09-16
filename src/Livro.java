@@ -1,4 +1,4 @@
-public abstract class Livro {
+public abstract class Livro implements Produto {
     private String nome;
     private String descricao;
     private double valor;
@@ -74,7 +74,7 @@ public abstract class Livro {
 
     // metodo para desconto em%
 
-    public abstract boolean aplicaDescontoDe(double porcentagem);
+    //   public abstract boolean aplicaDescontoDe(double porcentagem); -- substituida pela interface promocional
 //        if (porcentagem > 0.3){
 //            System.out.println("O Desconto não pode ser maior que 30%"); // msg printa em console, se quiser hide, comentar apenas
 //            return false;
