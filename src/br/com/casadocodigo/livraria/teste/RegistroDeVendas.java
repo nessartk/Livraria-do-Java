@@ -3,6 +3,8 @@ package br.com.casadocodigo.livraria.teste;
 import br.com.casadocodigo.livraria.Autor;
 import br.com.casadocodigo.livraria.produtos.*;
 
+import java.util.ArrayList;
+
 public class RegistroDeVendas {
     public static void main(String[] args) {
 
@@ -23,10 +25,11 @@ public class RegistroDeVendas {
 
         System.out.println("Total: " + carrinho.getTotal());
 
-        Produto[] produtos = carrinho.getProdutos();
-        for (int i = 0; i <= produtos.length; i++) {
+
+        ArrayList<Produto>produtos=new ArrayList<>();
+        for (int i = 0; i <= produtos.size(); i++) {
             try {
-                Produto produto = produtos[i];
+                Produto produto = produtos.get(i);
                 if (produto != null) {
                     System.out.println(produto.getValor());
                 }

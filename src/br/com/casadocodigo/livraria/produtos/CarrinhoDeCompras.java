@@ -1,5 +1,7 @@
 package br.com.casadocodigo.livraria.produtos;
 
+import java.util.ArrayList;
+
 public class CarrinhoDeCompras {
 
 
@@ -8,16 +10,19 @@ public class CarrinhoDeCompras {
     // declara variavel total;
 
     private double total;
-    private Produto[] produtos= new Produto[10];
-    private int contador =0;
+    private ArrayList<Produto>produtos;
 
+    public CarrinhoDeCompras(){
+        this.produtos = new ArrayList<>();
+    }
 
 
     public void adiciona( Produto produto){
-        System.out.println("Adicionando: " + produto);
-       this.produtos[contador]= produto;
-       contador++;
-       this.total += produto.getValor();
+        this.produtos.add(produto);
+    }
+
+    public void remove (int posicao){
+        this.produtos.remove(posicao);
     }
 
 
@@ -26,7 +31,7 @@ public class CarrinhoDeCompras {
     }
 
 
-    public Produto[] getProdutos() {
-        return new Produto[10];
+    public ArrayList<Produto> getProdutos(){
+        return produtos;
     }
 }
