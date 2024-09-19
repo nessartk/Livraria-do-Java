@@ -1,6 +1,12 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class Main {
+package br.com.casadocodigo.livraria.teste;
+import br.com.casadocodigo.livraria.*;
+import br.com.casadocodigo.livraria.Autor;
+import br.com.casadocodigo.livraria.produtos.Ebook;
+import br.com.casadocodigo.livraria.produtos.Livro;
+import br.com.casadocodigo.livraria.produtos.LivroFisico;
+
+
+public class CadastroDeLivros {
     public static void main(String[] args) {
 
         // invoca o construtor da classe autor para criar objeto autor 1
@@ -69,7 +75,7 @@ public class Main {
 
         // ebbok precisa de 1 autor sempre que instanciar um livro ou um ebook, como parametro! new livro, new autor.
         Ebook ebook = new Ebook(new Autor());
-        ebook.setNome("Java Ebook");
+        ebook.setNome("Java br.com.casadocodigo.livraria.produtos.Ebook");
 
 
 

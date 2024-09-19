@@ -1,3 +1,5 @@
+package br.com.casadocodigo.livraria;
+
 public class Autor {
     private String nome;
     private String email;
@@ -29,10 +31,10 @@ public class Autor {
     }
 
     // metodo para mostrar detalhes do autor( atributos,  no caso)
-    void mostrarDetalhes() {
-        System.out.println("Mostrando detalhes do Autor");
-        System.out.println("Nome do Autor: " + nome);
+    public void mostrarDetalhes() {
+        System.out.println("Mostrando detalhes do br.com.casadocodigo.livraria.Autor");
+        System.out.println("Nome do br.com.casadocodigo.livraria.Autor: " + nome);
         System.out.println("Email: " + email);
-        System.out.println("CPF: " + cpf);
+       System.out.println("CPF: " + cpf);
     }
 }
