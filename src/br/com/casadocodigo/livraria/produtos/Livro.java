@@ -11,8 +11,12 @@ public abstract class Livro implements Produto {
 
 
     // construtor para autor obriga a passagem de um autor como parametro;
-    public Livro(Autor autor){
-        this.autor = autor;
+    // exception caso o autor for nulo
+    public Livro(Autor autor) {
+        if (autor == null) {
+            throw new RuntimeException("O autor do livro não pode ser nulo");
+
+        } this.autor = autor;
     }
 
     // métodos
@@ -101,4 +105,5 @@ public abstract class Livro implements Produto {
     }
 
 
+    public abstract boolean aplicaDescontoDe(double v);
 }

@@ -9,6 +9,11 @@ public class MiniLivro extends Livro {
         super(autor);
     }
 
+    @Override
+    public boolean aplicaDescontoDe(double v) {
+        return false;
+    }
+
 
 }
 
